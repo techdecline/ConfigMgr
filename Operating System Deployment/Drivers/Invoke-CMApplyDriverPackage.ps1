@@ -545,6 +545,11 @@ Process {
 			$ComputerModel = Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty Model
 			$SystemSKU = Get-WmiObject -Class Win32_BaseBoard | Select-Object -ExpandProperty SKU
 		}
+		"*FUJITSU*" {
+			$ComputerManufacturer = "Fujitsu"
+			$ComputerModel = Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty Model
+			$
+		}
 	}
 	
 	# Fall back SystemSKU details	
