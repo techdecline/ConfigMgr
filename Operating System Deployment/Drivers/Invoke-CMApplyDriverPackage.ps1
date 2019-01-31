@@ -56,7 +56,7 @@
     Author:      Nickolaj Andersen / Maurice Daly
     Contact:     @NickolajA / @MoDaly_IT
     Created:     2017-03-27
-    Updated:     2019-01-29
+    Updated:     2019-01-31
 	
 	Minimum required version of ConfigMgr WebService: 1.6.0
     
@@ -104,6 +104,7 @@
 	2.1.4 - (2018-09-18) Added support to override the task sequence package ID retrieved from _SMSTSPackageID when the Apply Operating System step is in a child task sequence
 	2.1.5 - (2018-09-18) Updated the computer model detection logic that replaces parts of the string from the PackageName property to retrieve the computer model only
 	2.1.6 - (2019-01-28) Fixed an issue with the recurse injection of drivers for a single detected driver package that was using an unassigned variable
+	2.1.7 - (2019-01-31) Added Fujitsu as supported Manufacturer
 #>
 [CmdletBinding(SupportsShouldProcess = $true, DefaultParameterSetName = "Execute")]
 param (
